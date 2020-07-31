@@ -9,6 +9,8 @@ public class Singleton01 {
         return  instance;
     }
 
+    public void m(){} //这些表示业务方法
+
     public static void main(String[] args) {
         Singleton01 m1 = Singleton01.getInstance();  //new Singleton01();
         Singleton01 m2 = Singleton01.getInstance();//new Singleton01();
