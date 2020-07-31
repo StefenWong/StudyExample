@@ -6,6 +6,7 @@ public class Singleton07 {
     }
 
     //采取加一个静态内部内的方式，在里面初始化外面的07这个类
+
     //比第一个要好很多，01是只要加载就初始化了。这里07加载了，他的静态内部类Singleton07Hoder不会加载，只有在下面的getinstance调用的时候才会加载
     //jvm保证线程安全 类只加载一次
     private static class Singleton07Hoder {
