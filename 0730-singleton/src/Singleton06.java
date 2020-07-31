@@ -5,7 +5,7 @@
 public class Singleton06 {
 
     //下面变量不能加final，final的变量必须初始化
-    private static Singleton06 instance;
+    private static volatile Singleton06 instance;
 
     private Singleton06() {
     }
