@@ -3,7 +3,7 @@
  * 创建时间： 2020/8/1 15:19
  * 类描述：
  */
-public class Cat {
+public class Cat implements ComparableSelf{
     int WEIGHT;
     int HEIGHT;
 
@@ -29,5 +29,17 @@ public class Cat {
                 "WEIGHT=" + WEIGHT +
                 ", HEIGHT=" + HEIGHT +
                 '}';
+    }
+
+    @Override
+    public int CompareTo(Object o) {
+        Cat C = (Cat) o;
+        if(this.WEIGHT < C.WEIGHT){
+            return -1;
+        }else if (this.WEIGHT > C.WEIGHT) {
+            return  1;
+        } else {
+            return  0;
+        }
     }
 }
