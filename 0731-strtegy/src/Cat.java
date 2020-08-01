@@ -23,4 +23,11 @@ public class Cat {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Cat{" +
+                "WEIGHT=" + WEIGHT +
+                ", HEIGHT=" + HEIGHT +
+                '}';
+    }
 }
