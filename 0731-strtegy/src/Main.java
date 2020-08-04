@@ -12,9 +12,13 @@ public class Main {
 
 
         Sorter sorter = new Sorter();
-        Cat[] cats = {new Cat(100,199), new Cat(200,299), new Cat(22,33)};
-        sorter.Catsort(cats);
+        //Cat[] cats = {new Cat(100,199), new Cat(200,299), new Cat(22,33)};
+        //sorter.Catsort(cats);
         //System.out.println(cats);
-        System.out.println(Arrays.toString(cats));
+        //System.out.println(Arrays.toString(cats));
+
+        Dog[] dogs = {new Dog(98),new Dog(23), new Dog(78)};
+        sorter.Objsort(dogs);
+        System.out.println(Arrays.toString(dogs));
     }
 }
