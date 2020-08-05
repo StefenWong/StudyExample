@@ -11,14 +11,24 @@ public class Main {
 //        System.out.println(Arrays.toString(a));
 
 
-        Sorter sorter = new Sorter();
+        //Sorter sorter = new Sorter();
         //Cat[] cats = {new Cat(100,199), new Cat(200,299), new Cat(22,33)};
         //sorter.Catsort(cats);
         //System.out.println(cats);
         //System.out.println(Arrays.toString(cats));
-
-        Dog[] dogs = {new Dog(98),new Dog(23), new Dog(78)};
-        sorter.Objsort(dogs);
+        Sorter<Dog> sorter = new Sorter<>();//直接Sorter sorter = new Sorter();这样也行
+        Dog[] dogs = {new Dog(98),new Dog(23), new Dog(-45), new Dog(78)};
+        //传递排序类型数组  以及  排序策略
+        sorter.Comsort(dogs,new DogCompareSelf2());
         System.out.println(Arrays.toString(dogs));
+
+
+        Cat[] cats = {new Cat(100,199), new Cat(200,299), new Cat(22,33)};
+        Sorter<Cat> sorter1 = new Sorter<>();
+        sorter1.Comsort(cats, new CatWeightCompareSelf2());
+        System.out.println(Arrays.toString(cats));
+
+
+
     }
 }
