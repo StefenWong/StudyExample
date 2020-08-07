@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/0730-singleton/0730-singleton.iml" filepath="$PROJECT_DIR$/0730-singleton/0730-singleton.iml" />
       <module fileurl="file://$PROJECT_DIR$/0731-strtegy/0731-strtegy.iml" filepath="$PROJECT_DIR$/0731-strtegy/0731-strtegy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/0807-factory/0807-factory.iml" filepath="$PROJECT_DIR$/0807-factory/0807-factory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/abstractfactory/0807abstractfactory.iml" filepath="$PROJECT_DIR$/abstractfactory/0807abstractfactory.iml" />
       <module fileurl="file://$PROJECT_DIR$/StudyExample.iml" filepath="$PROJECT_DIR$/StudyExample.iml" />
     </modules>
   </component>
