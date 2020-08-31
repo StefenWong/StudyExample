@@ -12,8 +12,8 @@ public class main {
         //2，单独的工厂: 添加一个新交通工具，都要新建一个工厂
         FactoryInterface f = new CarFactory().createCar(); //需要什么就创建什么
         f.start();
-        FactoryInterface f2 = new FlaneFactory().VehicleMethod();
-        f2.start();
+//        FactoryInterface f2 = new FlaneFactory().VehicleMethod();
+//        f2.start();
 
 
 
